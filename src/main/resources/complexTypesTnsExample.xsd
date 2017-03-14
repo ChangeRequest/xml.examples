@@ -1,0 +1,31 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://github.com/ChangeRequest/xml.examples"
+        xmlns:tns="https://github.com/ChangeRequest/xml.examples">
+    <xsd:element name="catalog">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id" type="tns:id" maxOccurs="1" minOccurs="1"/>
+                <xsd:element name="items" type="tns:items"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="id">
+        <xsd:sequence>
+            <xsd:element name="value" type="xsd:unsignedLong"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="items">
+        <xsd:sequence>
+            <xsd:element name="item" type="item" maxOccurs="unbounded" minOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item">
+        <xsd:sequence>
+            <xsd:element name="id" type="id" maxOccurs="1" minOccurs="1"/>
+            <xsd:element name="title" type="xsd:string" maxOccurs="1" minOccurs="1"/>
+            <xsd:element name="description" type="xsd:string" maxOccurs="1" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

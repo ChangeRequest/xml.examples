@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="complexTypesExample.xsd">
+    <id>
+        <value>1</value>
+    </id>
+    <items>
+        <item>
+            <id>
+                <value>1</value>
+            </id>
+            <title>Test Item</title>
+        </item>
+        <item>
+            <id>
+                <value>2</value>
+            </id>
+            <title>Second Item</title>
+            <description>with description</description>
+        </item>
+    </items>
+</catalog>

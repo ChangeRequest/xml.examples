@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<tns:catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://github.com/ChangeRequest/xml.examples complexTypesTnsExample.xsd"
+             xmlns:tns="https://github.com/ChangeRequest/xml.examples">
+    <id>
+        <value>1</value>
+    </id>
+    <items>
+        <item>
+            <id>
+                <value>1</value>
+            </id>
+            <title>Test Item</title>
+        </item>
+        <item>
+            <id>
+                <value>2</value>
+            </id>
+            <title>Second Item</title>
+            <description>with description</description>
+        </item>
+    </items>
+</tns:catalog>

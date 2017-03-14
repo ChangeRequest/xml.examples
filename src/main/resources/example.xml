@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe name="bread" preptime="5" cooktime="180">
+    <title>Simple bread</title>
+    <ingredient amount="3" unit="glass">Flour</ingredient>
+    <ingredient amount="0.25" unit="gram">Yeast</ingredient>
+    <ingredient amount="1.5" unit="glass">Warm water</ingredient>
+    <ingredient amount="1" unit="teaspoon">Salt</ingredient>
+    <instructions>
+        <step>Mix all ingredients and knead thoroughly.</step>
+        <step>Leave for one hour in warm room.</step>
+        <step>Knead, put in the oven. Bake for 45 minutes.</step>
+    </instructions>
+</recipe>

@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="test">
+        <complexType>
+            <sequence>
+                <element name="id" type="string"/>
+                <element name="title" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

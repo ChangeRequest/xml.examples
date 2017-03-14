@@ -1,0 +1,30 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="car">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id" type="id"/>
+                <xsd:element name="carType" type="car"/>
+                <xsd:element name="carNumber" type="hex-string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name="id">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxExclusive value="1000000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="car">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Audi"/>
+            <xsd:enumeration value="BMW"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="hex-string">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="0[x|X][\dA-Fa-f]+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
