@@ -1,3 +1,4 @@
 XML Examples
-===============
-Just some examples for Java XML topic.
+============
+
+Examples for the Java XML API topic.
